@@ -17,7 +17,7 @@ export default function Productos() {
         {
             !data ? <>...loading</> : data.map( (prod) =>{
                 return(
-                    <Item key={prod._id} idProduct={prod._id} title={prod.title} photo={prod.photo} price={prod.price} description={prod.description}/>
+                    <Item key={prod._id} idProduct={prod._id} title={prod.title} photo={prod.photo} price={prod.price} description={prod.description} category={prod.category}/>
                 )
             })
         }
