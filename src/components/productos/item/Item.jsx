@@ -1,4 +1,4 @@
-import ButtonBuy from '../buttonBuy/ButtonBuy'
+import ButtonAddCart from '../buttonAddCart/ButtonAddCart'
 
 export default function Item({idProduct, title, photo, price, description, category}){
     return(
@@ -7,7 +7,7 @@ export default function Item({idProduct, title, photo, price, description, categ
             <img src={`http://localhost:8080/img-prod/`+category+'/'+photo} alt="imagen del producto" />
             <span>{price}</span>
             <p>{description}</p>
-            <ButtonBuy addProduct={{idProduct, title, photo, price, description, category}}/>
+            <ButtonAddCart addProduct={{idProduct, title, photo, price, description, category}}/>
         </div>
     )
 }
