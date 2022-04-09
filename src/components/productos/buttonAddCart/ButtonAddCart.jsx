@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react"
 
-
-export default function ButtonAddCart(addProduct) {
-
+export default function ButtonAddCart({idProduct, title, photo, price, description, category}) {
+        
+        const product = {idProduct, title, photo, price, description, category}
 
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: addProduct
+            body: JSON.stringify(product) 
         };
 
         const addCart = () => {

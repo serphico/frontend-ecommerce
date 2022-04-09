@@ -7,7 +7,7 @@ export default function Item({idProduct, title, photo, price, description, categ
             <img src={`http://localhost:8080/img-prod/`+category+'/'+photo} alt="imagen del producto" />
             <span>{price}</span>
             <p>{description}</p>
-            <ButtonAddCart addProduct={{idProduct, title, photo, price, description, category}}/>
+            <ButtonAddCart idProduct={idProduct} title={title} photo={photo} price={price} description={description} category={category}/>
         </div>
     )
 }
