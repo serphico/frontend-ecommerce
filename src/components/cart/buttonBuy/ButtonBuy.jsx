@@ -11,7 +11,7 @@ export default function ButtonAddCart({allCart}) {
     };
 
     const finishBuy = () => {
-        fetch('/buy', requestOptions)
+        fetch('https://tercera-preentrega.herokuapp.com/buy', requestOptions)
         .then(response => response.json())
     }
 

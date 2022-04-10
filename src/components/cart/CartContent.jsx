@@ -7,7 +7,7 @@ export default function Productos() {
   
     const [data, setData]= React.useState(null);
     React.useEffect(()=>{
-      fetch("/cart")
+      fetch("https://tercera-preentrega.herokuapp.com/cart")
       .then((res)=> res.json())
       .then((data) => {
         setData(data.cartContent)
