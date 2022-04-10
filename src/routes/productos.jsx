@@ -1,7 +1,7 @@
-import Productos from '../components/productos/Productos'
+import ProductsContent from '../components/productos/ProductsContent'
 
-export default function Register() {
+export default function Products() {
     return (
-            <Productos/>
+            <ProductsContent/>
     );
   }

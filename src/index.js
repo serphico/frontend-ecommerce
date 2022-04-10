@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Header from './components/header/Header';
 import App from './App';
-import Home from './routes/home';
+import Cart from './routes/Cart';
 import Login from './routes/Login'
 import Register from './routes/Register';
 import reportWebVitals from './reportWebVitals';
@@ -22,7 +22,7 @@ root.render(
 
       <Routes>
       <Route path="/" element={<App />} />
-      <Route path="home" element={<Home />} />
+      <Route path="cart" element={<Cart />} />
       <Route path="/login" element={<Login />}/>
       <Route path="/register" element={<Register />}/>
     </Routes>

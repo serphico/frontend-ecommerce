@@ -42,7 +42,7 @@ export default function RegisterForm() {
                     <label>
                         Nº de Télefono:
                     </label>
-                    <input className="p-2" type="tel" name="phone" placeholder="+543794123456" pattern="[\+]\d{2}[\]\d{2-3}[\]\d{3}[\-]\d{4}" required/>
+                    <input className="p-2" type="tel" name="phone" placeholder="+543794123456" /*pattern="[\+]\d{2}[\]\d{2-3}[\]\d{3}[\-]\d{4}"*/ required/>
                     <small className="p-1">El formato del número de télefono es <strong>+54114123456</strong></small>
                 </div>
                 <div className="flex flex-col py-5">

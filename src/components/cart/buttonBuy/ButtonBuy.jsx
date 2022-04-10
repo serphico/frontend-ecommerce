@@ -1,38 +1,25 @@
 
-export default function ButtonAddCart({idProduct, title, photo, price, description, category}) {
+export default function ButtonAddCart({allCart}) {
         
-    const product = {idProduct, title, photo, price, description, category}
+    const finalCart = JSON.stringify(allCart)
+
 
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(product) 
+        body: finalCart
     };
 
-    const addCart = () => {
-        fetch('/buy
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         
-         ', requestOptions)
+    const finishBuy = () => {
+        fetch('/buy', requestOptions)
         .then(response => response.json())
     }
 
 
 
-return(
-    <button onClick={addCart} className="bg-blue-500 py-2 px-4 text-white font-bold">
-        comprar
-    </button>
-)
+    return(
+        <button onClick={finishBuy} className="bg-blue-500 py-2 px-4 text-white font-bold">
+            comprar
+        </button>
+    )
 }
