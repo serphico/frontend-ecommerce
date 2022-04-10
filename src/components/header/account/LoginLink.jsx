@@ -7,7 +7,7 @@ export default function Login() {
   const [data, setData]= useState(null);
   const [isLogin, setIsLogin]= useState(null)
     useEffect(()=>{
-    fetch("https://tercera-preentrega.herokuapp.com/login")
+    fetch("/login")
     .then((res)=> res.json())
     .then((data) => {
       setIsLogin(data.isLogin)

@@ -9,7 +9,7 @@ export default function Logout() {
     };
 
     const logoutAction = () =>{
-        fetch('https://tercera-preentrega.herokuapp.com/logout',requestOptions)
+        fetch('/logout',requestOptions)
         .then(response => {response.json()
          window.location.reload(false);   
         })

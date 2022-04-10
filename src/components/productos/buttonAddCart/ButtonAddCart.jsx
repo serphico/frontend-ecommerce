@@ -10,7 +10,7 @@ export default function ButtonAddCart({idProduct, title, photo, price, descripti
         };
 
         const addCart = () => {
-            fetch('https://tercera-preentrega.herokuapp.com/cart', requestOptions)
+            fetch('/cart', requestOptions)
             .then(response => response.json())
         }
  

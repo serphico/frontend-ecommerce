@@ -2,7 +2,7 @@ export default function RegisterForm() {
     return (
 
         <>
-            <form action="https://tercera-preentrega.herokuapp.com/register" enctype="multipart/form-data" method="POST" className="container mx-auto flex flex-col rounded-[0.5rem] mt-20 p-5 bg-gray-200 shadow-2xl shadow-slate-500 w-1/4">
+            <form action="/register" enctype="multipart/form-data" method="POST" className="container mx-auto flex flex-col rounded-[0.5rem] mt-20 p-5 bg-gray-200 shadow-2xl shadow-slate-500 w-1/4">
                 <h1 className="font-black text-2xl py-7">Registrate</h1>
                 <div className="flex flex-col py-5">
                     <label >

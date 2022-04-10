@@ -8,7 +8,7 @@ function App() {
 
   const [isLogin, setIsLogin]= React.useState(null);
   React.useEffect(()=>{
-    fetch("https://tercera-preentrega.herokuapp.com/api")
+    fetch("/api")
     .then((res)=> res.json())
     .then((data) => {
       !data.isLogin ? navigate("/login") :
